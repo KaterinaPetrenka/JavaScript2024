@@ -1,0 +1,18 @@
+td {
+    width: 150px;
+    padding: 15px;
+}
+tr:nth-child(2n) {
+    background-color: blanchedalmond;
+}
+
+tbody>tr:hover {
+    background-color: black;
+    color: white;
+}
+thead>tr:hover {
+    background-color: white;
+}
+.tabulka {
+    overflow-x: auto;
+}

@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-right: 100px;
+}
+tr {
+    height: 100px;
+    width: 100px;
+}
+td{
+    border: 1.5px solid black;
+    height: 100px;
+    width: 100px;
+}
+.transparent {
+    vertical-align: bottom;
+    border: none;
+    background-color: white;
+}
+.transparent2 {
+    border: none;
+}
+p {
+    text-align: center;
+    font-weight: bold;
+}
+//*
+tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: sienna;
+}
+tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: sienna;
+}
+.transparent2::before {
+    content: counter(row-counter);
+    counter-increment: row-counter;
+}

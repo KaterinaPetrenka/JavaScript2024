@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner {
+            display: flex;
+            flex-direction: row;
+        }
+        .item {
+            padding: 20px;
+            text-align: justify;
+            border: 1px solid black;
+        }
+        .w1 {
+            flex: 1;
+        }
+        .w2 {
+            flex: 3;
+        }
+        .b1 {
+            background-color: blue;
+        }
+        .b2 {
+            background-color: blueviolet;
+        }
+        .b3 {
+            background-color: blanchedalmond;
+        }
+        .b4 {
+            background-color: aqua;
+        }
+        @media screen and (max-width:800px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item w1 b1">
+            <h4>Sloupec 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eaque nesciunt. Maxime nulla molestias officiis inventore sapiente iure molestiae consectetur repudiandae ducimus, laborum, beatae velit recusandae, dignissimos sequi totam officia.</p>
+        </div>
+        <div class="item w2 b2">
+            <h4>Sloupec 2</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cumque a quis quisquam rerum, minus iste ducimus libero, praesentium quia laborum quae aliquam. Qui, quod?</p>
+        </div>
+        <div class="item w1 b3">
+            <h4>Sloupec 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro labore laboriosam officiis quidem accusamus, deserunt placeat quasi suscipit numquam iure saepe culpa atque iste aut!</p>
+        </div>
+        <div class="item w1 b4">
+            <h4>Sloupec 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam, nesciunt consequuntur praesentium dicta pariatur similique omnis nulla expedita aperiam itaque iusto dolorum optio cupiditate?</p>
+        </div>
+    </div>
+</body>
+</html>

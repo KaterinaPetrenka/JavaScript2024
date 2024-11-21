@@ -1,0 +1,57 @@
+#first {
+    background-color: lightskyblue;
+    border-radius: 20pt;
+}
+
+#firstbutton {
+    background-color: lightskyblue;
+    border-color: white;
+    color: white;  
+}
+
+#firstbutton:hover {
+    background-color: white;
+    color: lightskyblue;
+}
+
+#zprava {
+    min-height: 105px;
+}
+
+.reklamace {
+    background-color: hotpink;
+    opacity: 90%;
+    color: white;
+}
+
+#thirdbutton {
+    background-color: hotpink;
+    border-color: white;
+    color: white;
+}
+
+#thirdbutton:hover {
+    background-color: white;
+    color: hotpink;
+}
+
+.zprava, .email, .tel {
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.zprava {
+    background-image: url('/imgs/zprava.png');
+}
+
+.email {
+    background-image: url('/imgs/email.png');
+}
+
+.tel {
+    background-image: url('/imgs/telefon.png');
+}
+
+.zprava:focus, .tel:focus, .email:focus {
+    background-image: none;
+}

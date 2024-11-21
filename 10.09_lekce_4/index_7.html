@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciklus_while_2</title>
+</head>
+<body>
+    <script>
+        document.write("Vitejte v kalkulacce <br />");
+        let pokracovat = ano;
+        while (pokracovat == ano) {
+            let volba = parseInt(prompt("Zadejte cislo 1 - spocitat: "));
+            let a = parseInt(prompt("zadejte prvni cislo: "));
+            let b = parseInt(prompt("zadejte druhe cislo: "));
+
+            let priklad = "";
+
+            switch (volba) {
+                case 1: 
+                    priklad = `${a} + ${b} = ${a + b}`;
+                    break;
+                case 2: 
+                    priklad = `${a} - ${b} = ${a - b}`;
+                    break;
+                case 3: 
+                    priklad = `${a} * ${b} = ${a * b}`;
+                    break;
+                case 4:
+                    if (b == 0) {
+                        priklad = ""
+                    }
+                    priklad = `${a} / ${b} = ${a / b}`;
+                    break; 
+                default: 
+                    priklad = "Neni to platna volba"
+                }
+                pokracovat =confirm(priklad + ";' Prejete si pokraccovat?");
+                document.write("Vysledek: " + priklad + "<br />");
+            }
+            document.write("<br /> Dekuji za pouziti kalkulacky");
+    </script>
+</body>
+</html>

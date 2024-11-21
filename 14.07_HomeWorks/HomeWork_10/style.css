@@ -1,0 +1,67 @@
+#first {
+    background-color: rgb(31, 88, 145);
+}
+
+.btn-outline-myColor {
+    background: rgb(31, 88, 145);
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-myColor:hover {
+    background: white;
+    color: rgb(31, 88, 145);
+}
+
+#secondbutton {
+    background-color: rgb(40, 167, 69);
+}
+
+#secondbutton:hover {
+    background-color: white;
+    color: rgb(40, 167, 69);
+    border-color: rgb(40, 167, 69);
+}
+
+#zprava {
+    min-height: 105px;
+}
+
+.vodnik {
+    background-color: rgb(134, 175, 51);
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+#thirdbutton {
+    background-color: rgb(134, 175, 51);
+    border-color: white;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+#thirdbutton:hover {
+    background-color: white;
+    color: rgb(134, 175, 51);
+}
+
+.zprava, .email, .tel {
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.zprava {
+    background-image: url('/imgs/zprava.png');
+}
+
+.email {
+    background-image: url('/imgs/email.png');
+}
+
+.tel {
+    background-image: url('/imgs/telefon.png');
+}
+
+.zprava:focus, .tel:focus, .email:focus {
+    background-image: none;
+}

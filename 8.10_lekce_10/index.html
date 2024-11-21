@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knihovna Math</title>
+</head>
+<body>
+    <script>
+        let x = 1.7678;
+        let y = 2.2e-5; //0.000022 nebo 22*10ˆ-6
+        let z = 228;
+
+        document.write(isNaN(y));
+        document.write("<br>");
+        document.write(x.toPrecision(2));
+        document.write("<br>");
+        document.write(y.toExponential(4));
+        document.write("<br>");
+        document.write(typeof z.toString(2));
+        document.write("<br>");
+
+        let max = Number.MAX_VALUE;
+        let min = Number.MIN_VALUE;
+
+        document.write('JavaScipt umi pracovat s cisly mezi' + min + " a " + max + ".");
+        document.write("<br>");
+        document.write(Math.sin(Math(PI)));
+        
+
+
+    </script>
+</body>
+</html>

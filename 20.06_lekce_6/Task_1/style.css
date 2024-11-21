@@ -1,0 +1,12 @@
+p::first-letter {
+    color: red;
+    font-size: 35px; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+p:nth-last-child(even) {
+    background-color: rgb(204, 204, 204);
+}
+p:nth-child(3n+1)::after {
+content: " - 🟡";
+}

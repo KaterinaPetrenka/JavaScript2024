@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .items {
+        flex-grow: 3;
+        border: 1px solid black;
+        text-align: center;
+    }
+    .small {
+        flex-grow: 1;
+        background-color: lime;
+    }
+    .big {
+        flex-grow: 3;
+        background-color: magenta;
+    }
+    .medium {
+        flex-grow: 2;
+        background-color: hotpink;
+    }
+    .x-small {
+flex-grow: 10;
+background-color: blueviolet;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items small">A</div>
+        <div class="items big">B</div>
+        <div class="items small">C</div>
+        <div class="items x-small">D</div>
+        <div class="items small">E</div>
+        <div class="items medium">F</div>
+        <div class="items">G</div>
+    </div>
+</body>
+</html>

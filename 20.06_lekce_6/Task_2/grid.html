@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% auto auto;
+            gap: 40px;
+        }
+        .items {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        .slouceni {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items slouceni">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+        <div class="items">H</div>
+        <div class="items">J</div>
+    </div>
+</body>
+</html>

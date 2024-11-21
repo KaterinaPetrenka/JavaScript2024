@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    <script>
+        let vstup = prompt("Zadajte nejaky text: ");
+        document.write("Zadany text: " + vstup);
+
+        document.write("<br>");
+
+        let a = parseInt(prompt("Zadej cislo a: "));
+        let b = parseInt(prompt("Zadej cislo b: "));
+        document.write("Soucet zadanych cisel: " + (a + b));
+
+        document.write("<br>");
+
+        let cislo = parseInt(prompt("Zadejte cislo c: "));
+        if (cislo > 100) {
+                document.write("Cislo je vetsi nez 100.");
+        }
+        document.write("Cislo je mensi nez 100. Uvedene cislo je: " + `${cislo}` + "<br>" + "Dekuji");
+    </script>
+</body>
+</html>

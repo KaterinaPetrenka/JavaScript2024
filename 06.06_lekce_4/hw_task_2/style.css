@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr {
+    height: 70px;
+}
+td {
+    border: 1px solid black;
+}
+.black {
+    background-color: brown;
+}
+.white {
+    background-color: blanchedalmond;
+}
+/*
+div {
+    display: none;
+  }
+  
+  span:hover + div {
+    display: block;
+  }

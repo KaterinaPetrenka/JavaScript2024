@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/18.07_lekce_12/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap-2 Formular Reklamace</title>
+</head>
+<body>
+    <div class="bg-green my-5 mx-5">
+    <div class="container">
+        <div class="row py-5">
+            <!--Nadpis-->
+            <div class="col text-center">
+                <h2 class="text-uppercase">Reklamace</h2>
+            </div>
+        </div>
+        <!--Formularove prvky-->
+        <form action="">
+        <div class="row">
+            <div class="col mx-3">
+                <label for="zprava" class="form-label">Vase zprava</label>
+                <textarea name="zprava" id="zprava" class="border-0 rounded-0 form-control zprava" style="min-height: 105px;"></textarea>
+            </div>
+            <div class="col mx-3">
+               <div>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="border-0 rounded-0 form-control email">
+               </div> 
+               <div>
+                <label for="tel" class="form-label">Telefon</label>
+                <input type="tel" name="tel" id="tel" class="border-0 rounded-0 form-control tel">
+               </div>
+            </div>
+        </div>
+        <!--Tlacitko-->
+        <div class="row pt-4 pb-5">
+            <div class="col text-center">
+                <button type="submit" class="btn btn-my rounded-0 fv-bold text-uppercase">Odeslat</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Domek, Vlajka, Sipka</title>
+</head>
+<body>
+    <div class="titul">
+        <h3>Cviceni SVG (+CSS?)</h3>
+    </div>
+    <div class="flex-cviceni">
+        <div class="domek">
+            <p>Domek jednim tahem</p>
+            <svg width="360" height="350">
+                <polygon points="50,300 300,150 50,150 300,300 50,300 50,150 175,50 300,150 300,300" style="fill:lightgrey; stroke:black;stroke-width:3;"/>
+            </svg>
+        </div>
+        <div class="crVlajka">
+            <p>Ceska vlajka</p>
+            <svg width="360" height="350">
+                <polygon points="50,50 175,137.5 50,225 50,50" style="fill:blue;"/>
+                <polygon points="50,50 175,137.5 300,137.5 300,50 50,50" style="fill:white;"/>
+                <polygon points="50,225 175,137.5 300,137.5 300,225 50,225" style="fill:red;"/>
+            </svg>
+        </div>
+        <div class="svedskaVlajka">
+            <p>Svedska vlajka</p>
+            <svg width="360" height="350">
+                <rect x="50" y="50" width="250" height="175" style="fill:#287d9b"/>
+                <line x1="140" y1="50" x2="140" y2="225" class="krizek" />
+                <line x1="50" y1="132.5" x2="300" y2="132.5" class="krizek"/>
+            </svg>
+        </div>
+        <div class="sipka">
+            <p>Sipka/y</p>
+            <svg id="svgSipka" width="360" height="350">
+                <polygon points="50,125 175,125 175,50 300,175 175,300 175,225 50,225 50,125" fill= "lime" stroke= "green" stroke-width= "1"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

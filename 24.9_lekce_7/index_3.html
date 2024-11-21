@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesarovy sifr</title>
+</head>
+<body>
+    <script>
+        // Step 1: Get input from the user
+let input = prompt("Enter a word:");
+document.write(`Puvodni zprava je: '${input}' `);
+document.write("<br>");
+
+// Step 2: Split the word into an array of characters
+let characters = input.split('');  // Splits the word into individual characters
+
+// Step 3: Create a matrix where each row contains a single character
+let matrix = [];
+for (let i = 0; i < characters.length; i++) {
+    matrix[i] = [characters[i]];  // Each character is placed in its own row
+}
+
+// Step 4: Display the matrix
+console.log("Matrix of characters:");
+for (let row of matrix) {
+    console.log(row);
+}
+
+document.write(matrix);
+        </script>
+</body>
+</html>

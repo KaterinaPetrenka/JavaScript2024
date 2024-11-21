@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let zaklad = parseInt(prompt("Zadejte zaklad mocniny: "));
+        let exp = parseInt(prompt("Zadej exponent: "));
+
+        let vysledek = 1;
+        for(let i = 0; i < exp; i++) {
+            vysledek *= zaklad;
+            document.write("pro i=" + i + " je vysledek: " + zaklad + " " + i+1 + "=" + vysledek + "<br>");
+        }
+        document.write("<br><br> <b> konecni vysledek: " + zaklad + " " + exp + "=" + vysledek + "</b>")
+    </script>
+</body>
+</html>

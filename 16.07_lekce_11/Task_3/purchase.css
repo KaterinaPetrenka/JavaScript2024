@@ -1,0 +1,19 @@
+
+
+.formHeader {
+    background-color: lightskyblue;
+}
+#second {
+    background-color: lightskyblue;
+    opacity: 85%;
+    border-radius: 20pt;
+}
+#secondbutton {
+    background-color: hotpink;
+}
+
+#secondbutton:hover {
+    background-color: white;
+    color: hotpink;
+}
+

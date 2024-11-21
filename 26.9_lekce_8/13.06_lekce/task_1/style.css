@@ -1,0 +1,8 @@
+.neco {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid blue;
+    color: red;
+    visibility: hidden;
+    background-color: yellow;
+}

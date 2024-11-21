@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.chessboard {
+    display: inline-block;
+    border: 2px solid black;
+    counter-reset: row-counter 8;
+}
+
+.row {
+    display: flex;
+}
+
+.corner {
+    width: 30px;
+    height: 30px;
+}
+
+.label {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number::before {
+    content: counter(row-counter);
+    counter-decrement: row-counter;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+}
+
+.square:nth-child(odd) {
+    background-color: white;
+}
+
+.square:nth-child(even) {
+    background-color: black;
+}
+
+.row:nth-child(odd) .square:nth-child(odd),
+.row:nth-child(even) .square:nth-child(even) {
+    background-color: black;
+}
+
+.row:nth-child(odd) .square:nth-child(even),
+.row:nth-child(even) .square:nth-child(odd) {
+    background-color: white;
+}

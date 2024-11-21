@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jazyk = "JavaScript";
+        document.write(jazyk[0] + jazyk[4] + "<br>" + "<hr>");
+        //charAt
+        document.write(jazyk.charAt(0) + jazyk.charAt(4) + "<br>" + "<hr>");
+        //indexOf
+        document.write(jazyk.indexOf("a") + "<br>");
+        document.write(jazyk.indexOf("s") + "<br>");
+        document.write(jazyk.lastIndexOf("S")  + "<br>" + "<hr>")
+
+        //substring()
+        document.write(jazyk.substring(3,5)  + "<br>");
+        document.write(jazyk.substring(3) + "<br>" + "<hr>");
+        //charAtCode
+        hodnotaAscii = jazyk.charCodeAt(0);
+        znak = jazyk[0];
+        document.write(`Znak '${znak}' ma decadicke vyjadreni '${hodnotaAscii}' <br>`);
+        document.write("Znak '${znak}' ma ASCII dec '${hodnotaAscii}'");
+        //String.fromCharCode - z ASCII na znak
+        // hodnotaAscii = 102;
+        // znak = String.fromCharCode(hodnotaAscii);
+        // document.write(`Znak s ASCII DEKADICKYM KODEM ${hodnotaAscii} odpovida ${znak}`);
+
+        // greetings = "Hello";
+        // document.write("Moc Vas vitam: " + `${greetings}`);
+        
+        
+    </script>
+</body>
+</html>

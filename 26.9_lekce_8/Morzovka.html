@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morzovka</title>
+</head>
+<body>
+    <script>
+        let sifrovanaZprava = "--..|.|-...|.-.|.-|";
+        let decodovanaZprava = "";
+        let abeceda = abcdefghijklmnopqrstuvwxyz;
+        let morseovka = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
+        //rozdelim sifrovanou zpravu na jednotlive znaky
+        let znaky = sifrovanaZprava.split("|");
+
+        //iterace znaku
+        for (let morseouvZnak of znaky) {
+            let abecedniZnak = "";
+            let index = morseouvka.indexOf(morseouvZnak);
+            if (index >= 0) {
+                abecedniZprava = abeceda.charAt(index);
+            }
+            decodovanaZprava += abecedniZnak;
+        }
+    document.write(`Puvodni zprava: '${sifrovanaZprava}'`);
+    document.write("<br>");
+    document.write(`Sifrovana zprava: '${decodovanaZprava}'`);
+    </script>
+</body>
+</html>

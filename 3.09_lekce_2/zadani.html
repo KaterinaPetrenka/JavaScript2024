@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadani</title>
+</head>
+<body>
+    <script>
+        let date = new Date ();
+        let currentYear = date.getFullYear();
+        document.write(currentYear + "<br>");
+        let rok = parseInt(prompt("Zadej svuj rok narozeni: "));
+        if (rok + 18 > currentYear) {
+                document.write("Tvuj rok narozen je: " + `${rok}` + "<br>" + "Jsi zletily. 18+" + "<br>" + "Dekuji");
+        }
+                 document.write("Tvuj rok narozen je: " + `${rok}` + "<br>" + "Jsi nezletily." + "<br>" + "Promin");
+    </script>
+</body>
+</html>

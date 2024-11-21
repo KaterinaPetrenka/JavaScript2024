@@ -1,0 +1,43 @@
+.text {
+border-bottom: 1px dotter grey;
+cursor: help;
+position: relative;
+}
+
+.text .vysvetlivka {
+    visibility: hidden;
+    position: absolute;
+    background-color: black;
+    width: 150px;
+    color: white; 
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.text:hover .vysvetlivka {
+    visibility: visible;
+}
+
+.img {
+    max-width: 148px;
+}
+
+.vysvetlivka a {
+    
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 5px;
+}
+
+.vysvetlivka a:hover {
+    background-color: beige;
+    color: black;
+    text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date_Switch</title>
+</head>
+<body>
+    <script>
+        let date = new Date();
+        let word;
+
+        switch(date.getDay()) {
+            case 1: 
+                word = "Pondeli";
+                break;
+            case 2:
+                word = "Uteri";
+                break;
+            case 3: 
+                word = "Streda";
+                break;
+            case 4: 
+                word = "Ctvrtek";
+                break;
+            case 5: 
+                word = "Patek";
+                break;
+            case 6: 
+                word = "Sobota";
+                break;
+            case 0: 
+                word = "Nedele";
+                break;
+            default: 
+                word = "Chyba"
+        }
+
+        document.write("Dnes je den: " + word + "<br>")
+    </script>
+</body>
+</html>

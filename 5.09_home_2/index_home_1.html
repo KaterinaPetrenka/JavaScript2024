@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork_1</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Zadej stranu trojuhelnika a: "));
+        let b = parseInt(prompt("Zadej stranu trojuhelnika b: "));
+        let c = parseInt(prompt("Zadej stranu trojuhelnika c: "));
+            document.write(`Uvedene strany trojuhelnika jsou: ${a}` + "," + `${b}` + "," + `${c}`);
+
+            /* Function to check if the sides form a valid triangle */
+        let isValidTriangle
+            if ((a + b < c) && (a + c < b) && (b + c < a)) {
+                document.write("Trojuhelnik neeksistuje")
+            }
+    
+    </script>
+</body>
+</html>

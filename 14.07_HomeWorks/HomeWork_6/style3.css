@@ -1,0 +1,69 @@
+*{box-sizing: border-box;}
+
+body {
+    counter-reset: radek;
+}
+
+table {
+    margin: 50px 0 0 50px;
+    counter-reset: sloupec;
+}
+
+th {
+    width: 70px;
+    height: 70px;
+}
+
+tr {
+    position: relative;
+}
+
+tr:first-child th:not(:first-child):before {
+    top: 30px;
+    position: absolute;
+    counter-increment: radek;
+    content: counter(radek);;
+}
+
+tr:not(:first-child):after {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    counter-increment: sloupec;
+    content: counter(sloupec);
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd)>td:nth-child(odd) {
+    background-color: rgb(215, 215, 156);
+}
+
+tr:nth-child(odd)>td:nth-child(even) {
+    background-color: rgb(105, 80, 17);
+}
+
+tr:nth-child(even)>td:nth-child(odd) {
+    background-color: rgb(105, 80, 17);
+}
+
+tr:nth-child(even)>td:nth-child(even) {
+    background-color: rgb(215, 215, 156);
+}
+
+.chess {
+    margin-left: 11px;
+}
+
+/* tr {
+    counter-increment: cisla;
+    
+} */

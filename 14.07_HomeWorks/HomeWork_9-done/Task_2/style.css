@@ -1,0 +1,11 @@
+.btn-outline-myColor {
+    background: white;
+    border-color: lightskyblue;
+    color: lightskyblue;
+    width: 200px;
+}
+.btn-outline-myColor:hover {
+    background-color: lightskyblue;
+    width: 200px;
+    color: white;
+}

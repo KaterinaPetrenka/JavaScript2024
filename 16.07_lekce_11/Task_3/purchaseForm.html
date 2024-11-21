@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="purchase.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Purchase Form</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">DONUTS</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Main</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" href="eShop.html">E-Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="purchaseForm.html">Delivery</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="geyInTouchForm.html">Get in Touch</a>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacts</a>
+                              </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Donuts Category
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vanilla</a></li>
+                                <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="container border border-primary pt-5" id="second">
+                    <form action="#">
+                        <h1 class="text-center">NEED DELIVERY?</h1>
+                            <h2 class="text-center">Give us your contacts</h2>
+                        <div class="my-2 row pb-3 pt-5">
+                            <div class="col-lg-3 text-center fw-semibold">
+                                <label for="jmeno" class="col">First Name</label>
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="text" name="jmeno" id="jmeno" class="col-lg-10 rounded" placeholder="Type-in your Name">
+                            </div>
+                        </div>
+            
+                        <div class="my-2 row pb-3">
+                            <div class="col-lg-3 text-center fw-semibold">
+                                <label for="prijmeni" class="col-lg-3">Surname</label>
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="text" name="prijmeni" id="prijmeni" class="col-lg-10 rounded" placeholder="Type-in your Surname">
+                            </div>
+                        </div>
+            
+                        <div class="my-2 row pb-3">
+                            <div class="col-lg-3 text-center fw-semibold">
+                                <label for="email" class="col-lg-3">Email</label>
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="email" name="email" id="email" class="col-lg-10 rounded" placeholder="jan.novak@mail.cz">
+                            </div>
+                        </div>
+            
+                        <div class="my-2 row pb-3">
+                            <div class="col-lg-3 text-center fw-semibold">
+                                <label for="password" class="col-lg-3">Password</label>
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="password" name="password" id="password" class="rounded col-lg-10" placeholder="8-20 characters">
+                            </div>
+                        </div>
+            
+                        <div class="my-2 row pb-3">
+                            <div class="col-lg-3 text-center fw-semibold">
+                                <label for="password" class="col-lg-3">Password Again</label>
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="password" name="password" id="password" class="rounded col-lg-10" placeholder="8-20 characters">
+                            </div>
+                        </div>
+            
+                        <div class="my-2 row">
+                            <div class="col-lg-3 text-center fw-semibold">
+                                <label for="sex" class="col-lg-3 pt-3">Sex</label>
+                            </div>
+                            <div class="col-lg-7">
+                                <select class="form-select text-start" aria-label="Default select example">
+                                    <option selected>Male</option>
+                                    <option value="1">Female</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 my-2 text-center pt-5">
+                            <button class="btn btn-outline-myColor mb-1 px-5" id="secondbutton" type="submit">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

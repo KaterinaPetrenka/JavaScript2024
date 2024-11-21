@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task 1
+        let firstName = "Alice";
+        const birthYear = 1990;
+        let isLearningJavaScript = true;
+        console.log(firstName, birthYear, isLearningJavaScript);
+        //task 2
+        let score = [4, 6, 56, 97, 575, 5];
+        let friend = {name: "Jamie", age: 27, birthYear: "06.04.1990"};
+        console.log(score, friend);
+        //task 3
+        let a = 6;
+        let b = 54;
+        let sum = a + b;
+        console.log(sum);
+        console.log(a > b);
+        //task 4
+        function calculateSum(a, b) {
+            let sum = a + b;
+            console.log(`The numbers are '${a}' and '${b}'. It's sum is '${sum}`);
+        }
+            calculateSum(4,7);
+        //task 5
+        function greet(name) {
+            console.log(`Hello there, '${name}'`);
+        }
+        greet("Katerina")
+        //task 1
+        let myName = "Katerina";
+        //task 2
+        let line = [2, 4, 12, 34, 56];
+        //task 3
+        function product(a, b) {
+            let multip = a * b;
+            console.log(multip);
+        }
+        product(3, 2);
+        //task 4
+        let myCar = {make: "WV", model: "golf", year: 2022};
+        console.log(`My car is: '${Mmake}' '${model}' '${year}'`);
+        //task 5
+        let c = 6;
+        let d = 67;
+        console.log(c < d);
+        //task 6
+        function stringLength(word) {
+            let length = word.length;
+            console.log(length);
+        }
+        stringLength("great");
+        //task 7
+        function celsiusToFahrenheit(a) {
+            let toFahrenheit =((a * 9 / 5) + 32);
+            console.log(a + "=" + toFahrenheit);
+        }
+        celsiusToFahrenheit(24);
+        //task 8
+        let fruits = [apple, peasr, orange, grape];
+        console.log(fruits);
+        //task 9
+        function largestNumber([i]) {
+            let theLargest = 
+        }
+        //
+        //
+        //task 1
+        let name = "Katerina";
+        //task 2
+        let banch = [4, 7, 8, 4, 3];
+        //task 3
+        function numProduct(a, b) {
+            let multi = a * b;
+            console.log(multi);
+        }
+        numProduct(5,9);
+        //task 4
+        let car = {make:"WV", model:"Golf", year:2022};
+        console.log(`My car is: '${car.make}' '${car.model}' '${car.year}'`);
+        //task 5
+        let e = 89;
+        let f = 56;
+        console.log(e > f);
+        //task 6
+        function stringLength(word){
+            let wordLength = word.length;
+            console.log(wordLength);
+        }
+        stringLength("Awesome");
+        //task 7
+        function celsiusToFahrenheit(g) {
+            let toFahrenheit = ((g * 9 / 5) + 32);
+            console.log(toFahrenheit);
+        }
+        celsiusToFahrenheit (26);
+        //task 8
+        let myFavoriteFruits = ["apple", "pear", "watermelon", "blueberry"];
+        console.log(myFavoriteFruits);
+        //task 9
+        function findTheLargestNum(numbers) {
+            let maxNum = Math.max(...numbers)
+            console.log(`the all numbers are: '${numbers}' \n The largest of them is: '${maxNum}'`);
+        }
+        findTheLargestNum([6, 8, 5765, 67, 97]);
+        //task 10
+        function evenOrOdd(z) {
+            let num = z;
+            if(z % 2 == 0) {
+                console.log(`The number '${z}' is even`)
+            }
+            if(z % 2 !== 0) {
+                console.log(`The number '${z}' is odd`)
+            }
+        }
+        evenOrOdd(6458);
+
+        //task 2.1
+        function negativePositiveZero (num) {
+            if (num < 0) {
+                console.log(`Your number '${num}' is Negative`)
+            } else if (num === 0) {
+                console.log("Your bnumber is ZERO")
+            } else if (num > 0) {
+                console.log(`Your number '${num}' is Positive`)
+            } else {
+                console.log("Type in a valid number")
+            }
+        }
+        //task 2.2
+        function checkDay (day) {
+            let day = new Date().getDay();
+            day = day === 0 ? 7 : day;
+            switch (day) {
+                case 1:
+                    console.log("Monday");
+                    break;
+                case 2:
+                    console.log("Tuesday");
+                    break;
+                case 3:
+                    console.log("Wednesday");
+                    break;
+                case 4:
+                    console.log("Thursday");
+                    break;
+                case 5:
+                    console.log("Friday");
+                    break;
+                case 6: 
+                    console.log("Saturday");
+                    break;
+                case 7: 
+                    console.log("Sunday");
+                    break;
+                default: 
+                    console.log("Data are invalid");
+                    break;
+            }
+        }
+        //task 2.3
+        for(i = 1; i <= 10; i++) {
+            console.log(`Iteration number '${i}'`)
+        }
+        //task 2.4
+        let i = 1;
+        while (i <= 5) {
+            console.log(`Iteration number '${i}'`);
+            i++;
+        }
+        //task 5
+        let favColor = [ "red", "blue", "green", "yellow", "pink"];
+        favColor.push("magenta");
+        favColor.pop();
+        let favColorUpper = favColor.map(function(color)) {
+            return color to UpperCase
+        }
+    //Lesson 3
+    let num = [1, 2, 3, 4, 5, 6];
+    let bascket = ["apple", "banana", "cherry", "blueberry"];
+    console.log(num[2]);
+    console.log(bascket[0]);
+    bascket.push("melon");
+    num.push(98);
+    bascket.unshift("strawberry");
+    num.unshift(78);
+    bascket.pop();
+    num.pop();
+    bascket.shift();
+    num.shift();
+    // 
+    for (let i = 0; i < bascket.length; i++) {
+        console.log(bascket [i]);
+    }
+
+
+
+        
+    </script>
+</body>
+</html>

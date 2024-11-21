@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.my-card {
+    width: auto;
+    height: auto;
+    background-color: lightskyblue;
+}
+.sets {
+    background-color: lightskyblue;
+    opacity: 80%;
+    height: auto;
+    width: auto;
+    border-radius: 20pt;
+}
+.delivery {
+    height: 200px;
+    width: 220px;
+}
+.footer {
+    background-color: hotpink;
+    opacity: 80%;
+    width: 100%;
+    border-radius: 20, 20,0,0;
+}
+.my-main-cards {
+    background-color: lightskyblue;
+    opacity: 80%; 
+    width: auto;
+    border-radius: 20pt;
+}
+.main-img {
+    height: 400px;
+}
+.star {
+    left: 49%;
+    bottom: 231px;
+}

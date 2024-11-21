@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkce</title>
+</head>
+<body>
+    <script>
+        // //task 1
+        // function jeTrrojuhelnik (a, b, c) {
+        //     if (a + b > c && b + c > a && a + c > b) {
+        //         return 1;
+        //     }
+        //     else {
+        //         return 0;
+        //     }
+        // }
+        // document.write(jeTrojuhelnik(3, 4, 5));
+        // document.write(jeTrojuhelnik(1, 6, 5));
+        //task 2
+        // function vetaZkratka (veta) {
+        //     if (veta.lenght <= 10) {
+        //         document.write(veta)
+        //     } else {
+        //         veta = veta.slice(0, veta.length - 3) + "...";
+        //         document.write(veta)
+        //     }
+        // }
+        // vetaZkratka ("Love Java sooo much");
+
+        //task 3
+        let cislo = parseInt(prompt("Zadej cislo a ukazu jestli je v intervalu: "));
+        if (cislo <= 33 && cislo >= 13) {
+            zkouskaCisla(cislo);
+        }
+        function zkouskaCisla (cislo) {
+            document.write(`Tvoje cislo - '${cislo}' je v vybranem intervalu`)
+        }
+
+    </script>
+</body>
+</html>

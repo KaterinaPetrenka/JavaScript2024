@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px, solid, black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let cisla = [
+        [1, 5],
+        [4, 2],
+        [3, 3],
+        [1, 3],
+        [4, 2],
+        [1, 1],
+        [2, 5],
+        [3, 1],
+        [1, 4]
+        ];  
+
+        let soucetHodnot = 0;
+        let soucetVah = 0;
+
+
+
+        for(let i of cisla) {
+            let hodnota = i[0];
+            let vaha = i[1];
+
+            soucetHodnot += hodnota * vaha;
+            soucetVah += vaha;
+        }
+
+        document.write("Vazeny prumer je: " + (soucetHodnot / soucetVah));
+        </script>
+</body>
+</html>

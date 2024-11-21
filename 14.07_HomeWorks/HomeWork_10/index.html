@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláře</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container col-lg-12 my-3 text text-white" id="first">
+        <form action="#">
+            <div class="my-2">
+                <label for="zprava" class="form-label">Zprava</label>
+                <input type="text" name="zprava" id="zprava" class="form-control" placeholder="Začátek zpravy">
+            </div>
+
+            <div class="my-2">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Zadejte Váš e-mail">
+            </div>
+
+            <div class="my-2 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Souhlasím s podmínkami GDPR</label>
+            </div>
+
+            <div class="col-12 my-2">
+                <button class="btn btn-outline-myColor mb-4 px-5 rounded-0" type="submit">Odeslat</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div class="container border border-primary" id="second">
+        <form action="#">
+            <div class="my-2 row">
+                <div class="col-lg-2 text-center fw-semibold">
+                    <label for="jmeno" class="col-lg-2">Jmeno</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" name="jmeno" id="jmeno" class="col-lg-10 rounded" placeholder="Jan">
+                </div>
+            </div>
+
+            <div class="my-2 row">
+                <div class="col-lg-2 text-center fw-semibold">
+                    <label for="prijmeni" class="col-lg-2">Prijmeni</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" name="prijmeni" id="prijmeni" class="col-lg-10 rounded" placeholder="Novak">
+                </div>
+            </div>
+
+            <div class="my-2 row">
+                <div class="col-lg-2 text-center fw-semibold">
+                    <label for="email" class="col-lg-2">Email</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="email" name="email" id="email" class="col-lg-10 rounded" placeholder="jan.novak@mail.cz">
+                </div>
+            </div>
+
+            <div class="my-2 row">
+                <div class="col-lg-2 text-center fw-semibold">
+                    <label for="password" class="col-lg-2">Heslo</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="password" name="password" id="password" class="rounded col-lg-10" placeholder="8-20 znaku">
+                </div>
+            </div>
+
+            <div class="my-2 row">
+                <div class="col-lg-2 text-center fw-semibold">
+                    <label for="password" class="col-lg-2">Heslo znovu</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="password" name="password" id="password" class="rounded col-lg-10" placeholder="8-20 znaku">
+                </div>
+            </div>
+
+            <div class="my-2 row">
+                <div class="col-lg-2 text-center fw-semibold">
+                    <label for="sex" class="col-lg-2">Pohlavi</label>
+                </div>
+                <div class="col-lg-8">
+                    <select class="form-select text-start" aria-label="Default select example">
+                        <option selected>Muz</option>
+                        <option value="1">Zena</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-12 my-2 text-center">
+                <button class="btn btn-outline-myColor mb-1 px-5" id="secondbutton" type="submit">Zalozit ucet</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div class="my-5 vodnik" id="third">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="text-uppercase">Reklamace</h2>
+                </div>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col mx-3 my-2">
+                        <label for="">Vase zprava</label>
+                        <textarea name="zprava" class="border-0 rounded-0 form-control zprava" id="zprava" placeholder=""></textarea>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" id="email" class="border-0 rounded-0 form-control email" placeholder="">
+                        </div>
+                        <div>
+                            <label for="tel" class="form-label">Telefon</label>
+                            <input type="tel" name="tel" id="tel" class="border-0 rounded-0 form-control tel" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col pt-4 pb-5 text-center">
+                        <button class="btn btn-outline-myColor text-uppercase rounded-0" id="thirdbutton" type="submit">Odeslat</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.btn-outline-myColor {
+    background: white;
+    border-color: chocolate;
+    color: chocolate;
+    width: 200px;
+}
+.btn-outline-myColor:hover {
+    background-color: chocolate;
+    width: 200px;
+    color: white;
+}

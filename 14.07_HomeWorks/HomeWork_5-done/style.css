@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.titul {
+    background-color: lightgrey;
+}
+body {
+    background-color: lightgray;
+}
+.flex-cviceni {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    background-color: lightgrey;
+    /*position: center;
+    display: flex;
+     justify-content: space-around;
+   */
+}
+p {
+    text-align: center;
+    font-weight: bold;
+}
+.domek {
+    background-color: lightgrey;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    height: 350px;
+    width: 400px;
+    flex: 0 0 24.5%; 
+}
+.crVlajka {
+    background-color: lightgrey;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    height: 350px;
+    width: 400px;
+    flex: 0 0 24.5%; 
+}
+.svedskaVlajka {
+    background-color: lightgrey;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    height: 350px;
+    width: 400px;
+    flex: 0 0 24.5%; 
+}
+.krizek {
+    stroke: yellow;
+    stroke-width: 30;
+    }
+.sipka {
+    background-color: lightgrey;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    height: 350px;
+    width: 400px;
+    flex: 0 0 24.5%; 
+}
+
+svg #svgSipka:hover {
+    fill: rgb(104, 34, 189);
+}
+
+.sipka #svgSipka polygon:hover {
+    fill: aqua;
+    stroke:blueviolet
+}
+
+@media (min-width: 800px) {
+  .flex-cviceni {
+    flex-direction: row;
+    flex-wrap: wrap;
+  } 
+
+}

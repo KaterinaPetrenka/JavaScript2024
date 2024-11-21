@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadani_2</title>
+</head>
+<body>
+    <script>
+        /*Cviceni_1*/
+        let cislo = parseInt(prompt("Odhadni zadane cislo: "));
+        if (((cislo >= 10) && (cislo <= 20)) || (cislo >= 30) && (cislo <= 40))
+        /*if ((cislo <= 10) && (20 <= cislo <= 30) && (cislo => 40))*/ {
+                document.write("Spravne");
+        }
+        /*if ((10 < cislo < 20) && (30 < cislo < 40)) {
+                document.write("Spravne");*/
+        else {
+            document.write("Spatne")
+        }
+        
+document.write("<br>");
+
+        /*Cviceni_2*/
+        let time = new Date();
+            if ((time.getHours() >=6) && (time.getHours() < 9)) {
+                    document.write("Dobre rano");
+            }
+            else if ((time.getHours() >=9) && (time.getHours() < 12)) {
+                document.write("Dobre dopoledne");
+            }
+            else if ((time.getHours() >=12) && (time.getHours() < 14)) {
+                document.write("Dobre poledne");
+            }
+            else if ((time.getHours() >=14) && (time.getHours() < 17)) {
+                document.write("Dobre odpoledne");
+            }
+            else if ((time.getHours() >=17) && (time.getHours() < 22)) {
+                document.write("Dobry vecer");
+            }
+            else if ((time.getHours() >=22) && (time.getHours() < 6)) {
+                document.write("Dobrou noc");
+            }
+
+        
+
+            /*Cviceni_3*/
+        let userNum = parseInt(prompt("Zadej cislo: "));
+            if (userNum == 1) {
+                document.write("<br>" + "jedna");
+            }
+            if (userNum == 2) {
+                document.write("<br>" + "dva");
+            }
+            if (userNum == 3) {
+                document.write("<br>" + "tri");
+            }
+            if (userNum == 4) {
+                document.write("<br>" + "ctzri");
+            }
+            else {
+                document.write("<br>" + "Newim");
+            }
+                
+    </script>
+</body>
+</html>

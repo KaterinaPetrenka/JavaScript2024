@@ -1,0 +1,16 @@
+tr td:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.btn-outline-myColor {
+    background: white;
+    border-color: chocolate;
+    color: chocolate;
+    width: 200px;
+}
+
+.btn-outline-myColor:hover {
+    background: chocolate;
+    color: white;
+}

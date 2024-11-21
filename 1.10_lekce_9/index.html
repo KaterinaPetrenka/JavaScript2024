@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulacka</title>
+</head>
+<body>
+    <h1>Kalkulacka</h1>
+    <p>SCITANI</p>
+    <input type="text" id="cislo1"> + <input type="text" id="cislo2">
+    <br>
+    <br>
+    <button id="tlacitko">Secti</button>
+    <script>
+        let tlacitko = document.getElementById("tlacitko");
+        let cislo1 = document.getElementById("cislo1");
+        let cislo2 = document.getElementById("cislo2");
+
+        function soucet() {
+            alert(parseFloat(cislo1.value) + parseFloat(cislo2.value));
+        }
+        tlacitko.onclick = soucet;
+    </script>
+    <p>ODCITANI</p>
+    <input type="text" id="cislo3"> - <input type="text" id="cislo4">
+    <br>
+    <br>
+    <button id="tlacitko">Odcitej</button>
+    <script>
+        let tlacitko = document.getElementById("tlacitko");
+        let cislo3 = document.getElementById("cislo3");
+        let cislo4 = document.getElementById("cislo4");
+
+        function odecet() {
+            alert(parseFloat(cislo3.value) - parseFloat(cislo4.value));
+        }
+        tlacitko.onclick = odecti;
+    </script>
+    <p>NASOBENI</p>
+    <input type="text" id="cislo3"> * <input type="text" id="cislo4">
+    <br>
+    <br>
+    <button id="tlacitko">Odcitej</button>
+    <script>
+        let tlacitko = document.getElementById("tlacitko");
+        let cislo5 = document.getElementById("cislo5");
+        let cislo6 = document.getElementById("cislo6");
+
+        function odecet() {
+            alert(parseFloat(cislo5.value) - parseFloat(cislo6.value));
+        }
+        tlacitko.onclick = nasob;
+    </script>
+    <p>DELENI</p>
+    <input type="text" id="cislo3"> / <input type="text" id="cislo4">
+    <br>
+    <br>
+    <button id="tlacitko">Odcitej</button>
+    <script>
+        let tlacitko = document.getElementById("tlacitko");
+        let cislo7 = document.getElementById("cislo7");
+        let cislo8 = document.getElementById("cislo8");
+
+        function odecet() {
+            alert(parseFloat(cislo7.value) - parseFloat(cislo8.value));
+        }
+        tlacitko.onclick = del;
+    </script>
+</body>
+</html>

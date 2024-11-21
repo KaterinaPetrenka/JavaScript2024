@@ -1,0 +1,42 @@
+.bg-green {
+    background-color: rgb(134, 175, 51);
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+.btn-my {
+background-color: transparent;
+border-color: white;
+color: white;
+text-shadow: 1px 1px 3px black;
+
+} 
+
+.btn-my:hover {
+    background: white;
+    border-color: black;
+    color: black;
+}
+/*icons*/
+
+.zprava {
+background-image: url(/18.07_lekce_12/cviceni6/zprava.png);
+background-repeat: no-repeat;
+background-position: 8px 5px;
+}
+.email {
+background-image: url(/18.07_lekce_12/cviceni6/email.png);
+background-repeat: no-repeat;
+background-position: 10px 5px;
+}
+.tel {
+background-image: url(/18.07_lekce_12/cviceni6/telefon.png);
+background-repeat: no-repeat;
+background-position: 10px 5px;
+}
+
+.zprava:focus,
+.email:focus,
+.tel:focus {
+    background-image: none;
+}

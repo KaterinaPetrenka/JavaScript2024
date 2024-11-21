@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner {
+            display: grid;
+            grid-template-columns: 20% auto 20% 20%;
+        }
+        .item {
+            border: 1px solid black;
+        }
+        p {
+            padding: 10px;
+            text-align: justify;
+        }
+        h4 {
+            text-align: left;
+            padding-left: 10px;
+
+        }
+        p:nth-child(4n+1) {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">
+            <h4>Sloupec 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eaque nesciunt. Maxime nulla molestias officiis inventore sapiente iure molestiae consectetur repudiandae ducimus, laborum, beatae velit recusandae, dignissimos sequi totam officia.</p>
+        </div>
+        <div class="item">
+            <h4>Sloupec 2</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cumque a quis quisquam rerum, minus iste ducimus libero, praesentium quia laborum quae aliquam. Qui, quod?</p>
+        </div>
+        <div class="item">
+            <h4>Sloupec 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro labore laboriosam officiis quidem accusamus, deserunt placeat quasi suscipit numquam iure saepe culpa atque iste aut!</p>
+        </div>
+        <div class="item">
+            <h4>Sloupec 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam, nesciunt consequuntur praesentium dicta pariatur similique omnis nulla expedita aperiam itaque iusto dolorum optio cupiditate?</p>
+        </div>
+    </div>
+</body>
+</html>
